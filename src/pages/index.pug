@@ -22,3 +22,65 @@ block content
     .logo
       i.fas.fa-bezier-curve
   ///.top-content
+
+  section.customers
+    h2.section-heading Customers
+    .customers__wrapper
+      .customer
+        i.fas.fa-quote-left
+        p.customer__text
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquam tempore itaque nam quos ratione minus unde cum officiis quod rerum eaque eveniet dolorem laudantium, molestias cumque fuga animi tempora.
+        .customer__rating
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star-half-alt
+        +picture({
+          'img': 'customer-01',
+          'alt': 'Jane Lee',
+          'lg': false,
+          'md': true,
+          'ext': jpg
+        })
+        h3.customer__name Jane Lee
+
+      .customer
+        i.fas.fa-quote-left
+        p.customer__text
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquam tempore itaque nam quos ratione minus unde cum officiis quod rerum eaque eveniet dolorem laudantium, molestias cumque fuga animi tempora.
+        .customer__rating
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+        +picture({
+          'img': 'customer-02',
+          'alt': 'Bob Smith',
+          'lg': false,
+          'md': true,
+          'ext': jpg
+        })
+        h3.customer__name Bob Smith
+
+      .customer
+        i.fas.fa-quote-left
+        p.customer__text
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquam tempore itaque nam quos ratione minus unde cum officiis quod rerum eaque eveniet dolorem laudantium, molestias cumque fuga animi tempora.
+        .customer__rating
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+          i.far.fa-star
+        +picture({
+          'img': 'customer-03',
+          'alt': 'Ann Brown',
+          'lg': false,
+          'md': true,
+          'ext': jpg
+        })
+        h3.customer__name Ann Brown
+
+  ///.customers

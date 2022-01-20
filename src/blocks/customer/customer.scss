@@ -1,0 +1,70 @@
+// В этом файле должны быть стили для БЭМ-блока customer, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.customer {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  height: 50rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.5s;
+
+  background-color: #eee;
+  box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
+
+  &:hover {
+    box-shadow: 2rem 2rem 3rem #ddd, -2rem -2rem 3rem #eee;
+  }
+
+  .fa-quote-left {
+    font-size: 4rem;
+    color: #f08e0f;
+  }
+
+  img {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 0;
+    border-radius: 50%;
+
+    object-fit: cover;
+  }
+
+  &:first-child {
+    align-self: flex-end;
+  }
+
+  &:last-child {
+    align-self: flex-start;
+  }
+
+  &__text {
+    margin: 2.5rem 0;
+
+    font-size: 1.8rem;
+    text-align: justify;
+
+    &::first-letter {
+      margin-left: 1rem;
+    }
+  }
+
+  &__rating {
+
+    i {
+      font-size: 2rem;
+      color: #f08e0f;
+    }
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
