@@ -41,7 +41,7 @@ block content
           'alt': 'Jane Lee',
           'lg': false,
           'md': true,
-          'ext': jpg
+          'ext': 'jpg'
         })
         h3.customer__name Jane Lee
 
@@ -60,7 +60,7 @@ block content
           'alt': 'Bob Smith',
           'lg': false,
           'md': true,
-          'ext': jpg
+          'ext': 'jpg'
         })
         h3.customer__name Bob Smith
 
@@ -79,8 +79,95 @@ block content
           'alt': 'Ann Brown',
           'lg': false,
           'md': true,
-          'ext': jpg
+          'ext': 'jpg'
         })
         h3.customer__name Ann Brown
 
   ///.customers
+
+  section.team
+    h2.section-heading Team
+
+    .team__wrapper
+      .team__member
+        +picture({
+          'img': 'team-member-01',
+          'alt': 'Nick Smith',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }).team__member-img
+        h2.team__member-name
+          | Nick Smith
+          span (Designer)
+        ul.team__member-skils
+          li Ps
+          li Figma
+          li HTML5
+          li CSS3
+          li Ai
+        a.team__projects-btn(href='#') Projects
+        .story__btn(title='My Story')
+          .story__btn-line
+        .story
+          h4.story__heading About Me
+          p.story__paragraph
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+      .team__member
+        +picture({
+          'img': 'team-member-02',
+          'alt': 'Bob Brown',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }).team__member-img
+        h2.team__member-name
+          | Bob Brown
+          span (Designer)
+        ul.team__member-skils
+          li Ae
+          li Pr
+          li HTML5
+          li CSS3
+          li Inkscape
+        a.team__projects-btn(href='#') Projects
+        .story__btn(title='My Story')
+          .story__btn-line
+        .story
+          h4.story__heading About Me
+          p.story__paragraph
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+      .team__member
+        +picture({
+          'img': 'team-member-03',
+          'alt': 'John Doe',
+          'lg': false,
+          'md': false,
+          'ext': 'jpg'
+        }).team__member-img
+        h2.team__member-name
+          | John Doe
+          span (Developer)
+        ul.team__member-skils
+          li JavaScript
+          li ReactJs
+          li NodeJs
+          li MongoDB
+          li Python
+        a.team__projects-btn(href='#') Projects
+        .story__btn(title='My Story')
+          .story__btn-line
+        .story
+          h4.story__heading About Me
+          p.story__paragraph
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
+
+  ///.team
