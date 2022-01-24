@@ -5,4 +5,14 @@
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+
+  &__copyright {
+    margin-top: 5rem;
+    padding-bottom: 7rem;
+
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    color: #444;
+  }
 }

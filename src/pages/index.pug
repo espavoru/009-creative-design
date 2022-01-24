@@ -171,3 +171,46 @@ block content
             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic quae quisquam repudiandae dignissimos ad.
 
   ///.team
+
+  section.contact
+    h2.section-heading Contact
+    .form__container
+      +picture({
+        'img': 'form',
+        'alt': 'Form',
+        'lg': false,
+        'md': false,
+        'ext': 'png'}).contact__img
+      +form()
+        +field-text({
+            attrs: {
+              name: 'name',
+              placeholder: 'Your name'
+            }
+          })
+        +field-text({
+            attrs: {
+              type: 'email',
+              name: 'email',
+              placeholder: 'Your email'
+            }
+          })
+        +field-text({
+            isTextarea: true,
+            attrs: {
+              name: 'comment',
+              placeholder: 'Your message'
+            }
+          })
+          +field-text({
+            attrs: {
+              type: 'submit',
+              value: 'Send'
+            }
+          })
+  ///.contact
+
+block footer
+  +page-footer()
+    p.page-footer__copyright Copyright &copy; CodeAndCreate All Rights Reserved
+  ///.page-footer
