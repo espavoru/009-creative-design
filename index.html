@@ -60,15 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
       <header class="page-header" role="banner">
         <div class="page-header__inner"></div>
       </header>
-      <section class="top-content">
-        <nav class="navbar"><a class="navbar__link" href="#">Design</a><a class="navbar__link" href="#">Customers</a><a class="navbar__link" href="#">Team</a><a class="navbar__link" href="#">Contact</a></nav>
+      <section class="top-content" id="home">
+        <nav class="navbar"><a class="navbar__link" href="#home">Design</a><a class="navbar__link" href="#customers">Customers</a><a class="navbar__link" href="#team">Team</a><a class="navbar__link" href="#contact">Contact</a></nav>
         <!--/.navbar-->
         <div class="top-content__bg"></div>
         <h1 class="top-content__heading">Creative Design</h1>
         <div class="logo"><i class="fas fa-bezier-curve"></i></div>
       </section>
       <!--/.top-content-->
-      <section class="customers">
+      <section class="customers" id="customers">
         <h2 class="section-heading">Customers</h2>
         <div class="customers__wrapper">
           <div class="customer"><i class="fas fa-quote-left"></i>
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </section>
       <!--/.customers-->
-      <section class="team">
+      <section class="team" id="team">
         <h2 class="section-heading">Team</h2>
         <div class="team__wrapper">
           <div class="team__member">
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </section>
       <!--/.team-->
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="section-heading">Contact</h2>
         <div class="form__container">
           <picture class="picture contact__img">
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <!--/.contact-->
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner">
-          <p class="page-footer__copyright">Copyright &copy; CodeAndCreate All Rights Reserved</p>
+          <p class="page-footer__copyright">Copyright &copy; CodeAndCreate All Rights Reserved</p><a class="scroll-up" href="#home"><i class="fas fa-arrow-up"></i></a>
         </div>
       </footer>
       <!--/.page-footer-->

@@ -141,6 +141,17 @@ eval("document.querySelectorAll('.story__btn').forEach(function (btn) {\n  btn.a
 
 /***/ }),
 
+/***/ "./src/blocks/to-top/to-top.js":
+/*!*************************************!*\
+  !*** ./src/blocks/to-top/to-top.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var ready = __webpack_require__(/*! ../../js/utils/documentReady.js */ \"./src/js/utils/documentReady.js\");\n\nready(function () {\n  if (document.getElementById('to-top')) {\n    document.getElementById('to-top').addEventListener('click', function (e) {\n      e.preventDefault();\n      var scroll = window.pageYOffset;\n      var targetTop = 0;\n      var scrollDiff = (scroll - targetTop) * -1;\n      animate({\n        duration: 500,\n        timing: function timing(timeFraction) {\n          return Math.pow(timeFraction, 4); // https://learn.javascript.ru/js-animation\n        },\n        draw: function draw(progress) {\n          var scrollNow = scroll + progress * scrollDiff;\n          window.scrollTo(0, scrollNow);\n        }\n      });\n    }, false);\n    window.addEventListener('scroll', visibilityToggle);\n    visibilityToggle();\n  }\n\n  function visibilityToggle() {\n    if (window.pageYOffset >= 500) {\n      document.getElementById('to-top').classList.add('to-top--visible');\n    } else {\n      document.getElementById('to-top').classList.remove('to-top--visible');\n    }\n  }\n\n  function animate(_ref) {\n    var timing = _ref.timing,\n        draw = _ref.draw,\n        duration = _ref.duration;\n    var start = performance.now();\n    requestAnimationFrame(function animate(time) {\n      var timeFraction = (time - start) / duration;\n      if (timeFraction > 1) timeFraction = 1;\n      var progress = timing(timeFraction);\n      draw(progress);\n\n      if (timeFraction < 1) {\n        requestAnimationFrame(animate);\n      }\n    });\n  }\n});\n\n//# sourceURL=webpack:///./src/blocks/to-top/to-top.js?");
+
+/***/ }),
+
 /***/ "./src/js/entry.js":
 /*!*************************!*\
   !*** ./src/js/entry.js ***!
@@ -148,7 +159,7 @@ eval("document.querySelectorAll('.story__btn').forEach(function (btn) {\n  btn.a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/field-text/field-text.js */ \"./src/blocks/field-text/field-text.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/team/team.js */ \"./src/blocks/team/team.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/field-text/field-text.js */ \"./src/blocks/field-text/field-text.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/team/team.js */ \"./src/blocks/team/team.js\");\n\n__webpack_require__(/*! ../blocks/to-top/to-top.js */ \"./src/blocks/to-top/to-top.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 
