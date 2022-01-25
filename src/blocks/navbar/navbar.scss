@@ -12,6 +12,10 @@
   z-index: 20;
   top: 4rem;
 
+  @media (max-width: $screen-md) {
+    justify-content: space-around;
+  }
+
   &__link {
     width: 1.5rem;
 
@@ -24,6 +28,10 @@
     color: #fff;
 
     transition: all 0.5s;
+
+    @media (max-width: $screen-xl) {
+      font-size: 2rem;
+    }
 
     &:hover {
       width: 15rem;

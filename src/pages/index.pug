@@ -7,12 +7,12 @@ append config
     currentUrl = 'index.html'
 
 block content
-  section.top-content
+  section.top-content#home
     nav.navbar
-      a.navbar__link(href='#') Design
-      a.navbar__link(href='#') Customers
-      a.navbar__link(href='#') Team
-      a.navbar__link(href='#') Contact
+      a.navbar__link(href='#home') Design
+      a.navbar__link(href='#customers') Customers
+      a.navbar__link(href='#team') Team
+      a.navbar__link(href='#contact') Contact
     ///.navbar
 
     .top-content__bg
@@ -23,7 +23,7 @@ block content
       i.fas.fa-bezier-curve
   ///.top-content
 
-  section.customers
+  section.customers#customers
     h2.section-heading Customers
     .customers__wrapper
       .customer
@@ -85,7 +85,7 @@ block content
 
   ///.customers
 
-  section.team
+  section.team#team
     h2.section-heading Team
 
     .team__wrapper
@@ -172,7 +172,7 @@ block content
 
   ///.team
 
-  section.contact
+  section.contact#contact
     h2.section-heading Contact
     .form__container
       +picture({
@@ -213,4 +213,7 @@ block content
 block footer
   +page-footer()
     p.page-footer__copyright Copyright &copy; CodeAndCreate All Rights Reserved
+
+    a.scroll-up(href='#home')
+      i.fas.fa-arrow-up
   ///.page-footer

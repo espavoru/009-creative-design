@@ -1,0 +1,35 @@
+// В этом файле должны быть стили для БЭМ-блока scroll-up, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.scroll-up {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+
+  transition: background-color $transition-time;
+  background-color: rgba(50, 231, 255, 0.8);
+
+  @media (max-width: 550px) {
+    right: 3rem;
+    bottom: 3rem;
+  }
+
+  &:hover {
+    background-color: #28ddf5;
+    color: #fff;
+  }
+}

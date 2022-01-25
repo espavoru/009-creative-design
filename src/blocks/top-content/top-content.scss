@@ -23,6 +23,26 @@
     background-color: rgba(50, 231, 255, 0.8);
     animation: rotate 30s infinite;
 
+    @media (max-width: $screen-xl) {
+      top: -120vw;
+    }
+
+    @media (max-width: $screen-lg) {
+      top: -110vw;
+    }
+
+    @media (max-width: $screen-md) {
+      top: -100vw;
+    }
+
+    @media (max-width: $screen-sm) {
+      top: -90vw;
+    }
+
+    @media (max-width: 550px) {
+      top: -70vw;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -55,6 +75,32 @@
 
     background-color: #fff;
     opacity: 0.9;
+
+    @media (max-width: $screen-xl) {
+      top: 25vw;
+      width: 70rem;
+      font-size: 6rem;
+    }
+
+    @media (max-width: $screen-lg) {
+      top: 30vw;
+      width: 60rem;
+      font-size: 5rem;
+    }
+
+    @media (max-width: $screen-md) {
+      top: 40vw;
+    }
+
+    @media (max-width: $screen-sm) {
+      top: 48vw;
+    }
+
+    @media (max-width: 550px) {
+      top: 65vw;
+      width: 42rem;
+      font-size: 3.5rem;
+    }
   }
 }
 

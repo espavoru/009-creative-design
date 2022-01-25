@@ -33,7 +33,17 @@
   -webkit-text-size-adjust: 100%; // stylelint-disable-line
   min-width: 320px;
   min-height: 100%;
+
   font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media (max-width: $screen-sm) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 45%;
+  }
 
   &__inner {
     display: flex;

@@ -14,5 +14,17 @@
     text-align: center;
     letter-spacing: 0.2rem;
     color: #444;
+
+    @media (max-width: $screen-xl) {
+      margin-top: 5rem;
+      margin-right: 0;
+      margin-bottom: 4rem;
+      margin-left: 0;
+    }
+
+    @media (max-width: 550px) {
+      margin: 5rem;
+      font-size: 1.8rem;
+    }
   }
 }

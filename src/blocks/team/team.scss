@@ -13,11 +13,19 @@
   height: 100vh;
   padding: 5rem 0;
 
+  @media (max-width: $screen-xl) {
+    height: auto;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 70%;
+
+    @media (max-width: $screen-xl) {
+      flex-wrap: wrap;
+    }
   }
 
   &__member {
@@ -32,6 +40,14 @@
     background-color: #fffeee;
     opacity: 0.7;
     box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
+
+    @media (max-width: $screen-xl) {
+      margin: 5rem 10rem;
+    }
+
+    @media (max-width: 550px) {
+      margin: 5rem 0;
+    }
 
     &:hover {
       opacity: 1;

@@ -18,6 +18,14 @@
   background-color: #eee;
   box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
 
+  @media (max-width: $screen-xl) {
+    margin: 5rem 10rem;
+  }
+
+  @media (max-width: 550px) {
+    margin: 5rem 0;
+  }
+
   &:hover {
     box-shadow: 2rem 2rem 3rem #ddd, -2rem -2rem 3rem #eee;
   }

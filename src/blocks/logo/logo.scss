@@ -11,9 +11,21 @@
   left: 50%;
   transform: translateX(-50%);
 
+  @media (max-width: $screen-xl) {
+    top: 75%;
+  }
+
   .fas {
     font-size: 15rem;
     color: rgba(50, 231, 255, 0.8);
     text-shadow: 0.1rem 0.1rem 0.2rem #ddd, -0.1rem -0.1rem 0.2rem #ddd;
+
+    @media (max-width: $screen-xl) {
+      font-size: 10rem;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 9rem;
+    }
   }
 }
